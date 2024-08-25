@@ -162,6 +162,9 @@ header .navbar ul li a:hover {
     justify-content: center;
     flex-flow: column;
     padding: 0 15rem;
+    background-image: url(/img/img\ 2.jpg) ;
+    background-size: 3000px ; 
+
 }
 
 .Home h3 {
@@ -322,11 +325,11 @@ header .navbar ul li a:hover {
 .Technical_Skills .box-container .box img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .Technical_Skills .box-container .box:hover img {
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 /* Technical_Skills section ends */
@@ -350,12 +353,8 @@ header .navbar ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap:wrap;
 }
-
-/* .projects-title {
-    text-align: center;
-    margin-bottom: 1rem;
-} */
 
 .project-container {
     text-align: center;
@@ -365,22 +364,33 @@ header .navbar ul li a:hover {
 
 .project-container p {
     padding: 0.4rem;
+    font-weight:bolder;
 }
 
-/* .project-title {
-    margin-bottom: var(--bottom-margin);
-} */
+.project-title {
+    color: #111;
+    font-weight: bolder;
+    font-size: 20px;
+}
 
 .project-details {
     margin-bottom: var(--bottom-margin);
 }
 
 .project-card {
-    background-color: #fff;
+    background-color: #91ca79;
     border-radius: 11px;
     box-shadow: 0 3px 10px var(--primary-shadow);
     padding: 20px;
     margin: 10px;
+}
+
+.project-card:hover{
+    transform: scale(1.2);
+}
+
+#hms{
+    height: 155px;
 }
 
 /* project section ends */
@@ -553,7 +563,11 @@ header .navbar ul li a:hover {
 
 }
 
-@media (max-width:400px) {
+@media (max-width:430px) {
+
+    html {
+        font-size: 50%;
+    }
 
     header {
         width: 100vw;
@@ -572,7 +586,21 @@ header .navbar ul li a:hover {
     }
 
     .Technical_Skills .box-container .box {
-        width: 100%;
+        width: 50%;
+    }
+
+    /* .projects {
+        padding: 62px 0;
+        margin-right: 50px;
+        margin-left: 50px;
+    } */
+
+    .project-card {
+        /* background-color: #fff; */
+        border-radius: 11px;
+        box-shadow: 0 3px 10px var(--primary-shadow);
+        padding: 10px;
+        margin: 5px;
     }
 
     .Contact .row form {
@@ -580,3 +608,91 @@ header .navbar ul li a:hover {
     }
 
 }
+
+
+.card {
+    box-shadow: 5px 5px 21px -11px black;
+    border: none;
+    display: inline-block;
+    height: 500px;
+    min-height: 300px;
+    width: 25%;
+    min-width: 270px;
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+    padding: 0px 0px;
+    /* border-radius: 15px; */
+    margin-top: 65px !important;
+    /* background-image: linear-gradient(to top left, var(--themePrimaryColor), var(--blackColor)); */
+    background-color: darkcyan;
+  }
+  
+  
+  
+  .card-body h2 {
+    text-align: center;
+    /* background-color: rgba(131, 131, 131, 0.37); */
+    line-height: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: #ffea04;
+    margin-bottom: 20px;
+  }
+  
+  
+  .card img {
+    border-radius: 25px;
+    height: 275px;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+  
+  
+  .card-text span {
+    /* color: var(--whiteColor); */
+    color: #eee;
+    margin: 23px;
+    line-height: 22px;
+    margin-bottom: 50px;
+    font-size: 20px;
+    background: none;
+  }
+
+  .btnDiv {
+    /* position: absolute; */
+    margin-left: 14px;
+    margin-top: 30px;
+    font-size: 20px;
+    position:absolute;
+    /* left: 25px;
+    bottom: 25px; */
+  }
+
+  #nitk img{
+    border-radius: 25px;
+    height: 230px;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+  }
+
+  #nitkbtn{
+    margin-left: 80px;
+  }
+
+  #Dak{
+    margin-left: 8px;
+  }
+
+  #HighSchool{
+    margin-left: 50px;
+  }
