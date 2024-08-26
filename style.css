@@ -685,15 +685,7 @@ header .navbar ul li a:hover {
   }
 
   #nitk img{
-    border-radius: 25px;
     height: 230px;
-    width: 100%;
-    margin-top: 0;
-    padding-top: 0;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 0px;
-    border-top-right-radius: 0px;
-    border-top-left-radius: 0px;
   }
 
   #nitkbtn{
