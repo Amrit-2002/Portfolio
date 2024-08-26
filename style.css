@@ -484,7 +484,7 @@ header .navbar ul li a:hover {
     color: #333;
 }
 
-#lab_social_icon_footer .social:hover {
+/* #lab_social_icon_footer .social:hover {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
@@ -494,12 +494,23 @@ header .navbar ul li a:hover {
     -webkit-transform: scale(0.8);
     /* Browser Variations: */
 
-    -moz-transform: scale(0.8);
+    /* -moz-transform: scale(0.8);
     -o-transform: scale(0.8);
     -webkit-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
-    -o-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s; */
+/* } */ */
+
+#lab_social_icon_footer .social:hover {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
 }
+
+#lab_social_icon_footer .social {
+    transform: scale(0.8);
+    transition-duration: 0.5s;
+}
+
 
 /*
       Multicoloured Hover Variations
