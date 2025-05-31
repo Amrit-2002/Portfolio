@@ -73,7 +73,8 @@ body {
     background: var(--yellow);
 }
 
-.heading {
+.heading,
+.about-heading {
     text-align: center;
     margin: 0 6rem;
     font-size: 4rem;
@@ -82,7 +83,8 @@ body {
     color: #fff;
 }
 
-.heading span {
+.heading,
+.about-heading span {
     color: var(--yellow);
 }
 
@@ -162,9 +164,7 @@ header .navbar ul li a:hover {
     justify-content: center;
     flex-flow: column;
     padding: 0 15rem;
-    background-image: url(/img/img\ 2.jpg) ;
-    background-size: 3000px ; 
-
+    background-size: 3000px;
 }
 
 .Home h3 {
@@ -189,6 +189,39 @@ header .navbar ul li a:hover {
 
 
 /* about section starts */
+
+.About {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15rem;
+    background-size: 3000px;
+}
+
+.About p {
+    font-size: 2rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+
+.about-content {
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+.about-content span {
+    font-weight: bolder;
+    color: var(--yellow);
+}
+
+.about-content .p2 span {
+    font-weight: bolder;
+    color: blue;
+}
+
+.about-heading {
+    margin: 0 -9rem;
+}
 
 .About .row {
     display: flex;
@@ -243,6 +276,82 @@ header .navbar ul li a:hover {
 
 /* about section ends */
 
+/* experience section starts */
+
+.experience {
+    padding: 20px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.experience h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.duration {
+    color: #999;
+}
+
+.experience-card {
+    background-color: #1e1e1e;
+    /* Dark background */
+    color: #f1f1f1;
+    /* Light text */
+    padding: 40px;
+    max-width: 1100px;
+    /* Increased card width */
+    margin: 40px auto;
+    border-radius: 20px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.4);
+    font-size: 1.15rem;
+    /* Increased font size */
+    line-height: 1.85;
+    /* More line spacing for readability */
+}
+
+.experience-card .contribution {
+    font-size: 2rem;
+}
+
+.experience-card h3 {
+    font-size: 2.5rem;
+    color: #ffc107;
+    margin-bottom: 10px;
+}
+
+.experience-card h4 {
+    margin-top: 25px;
+    font-size: 2.2rem;
+    color: #ffa500;
+}
+
+.experience-card .company {
+    font-style: italic;
+    color: #cccccc;
+    font-size: 2.1rem;
+    margin-bottom: 20px;
+}
+
+.experience-card ul {
+    margin-left: 30px;
+    padding-left: 10px;
+}
+
+.experience-card ul li {
+    margin-bottom: 12px;
+    font-size: 2rem;
+    color: #e0e0e0;
+}
+
+.experience-card:hover {
+    box-shadow: 0 6px 25px rgba(255, 193, 7, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+
+/* experience section ends */
 
 /* education section starts */
 
@@ -353,7 +462,7 @@ header .navbar ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
 
 .project-container {
@@ -364,7 +473,7 @@ header .navbar ul li a:hover {
 
 .project-container p {
     padding: 0.4rem;
-    font-weight:bolder;
+    font-weight: bolder;
 }
 
 .project-title {
@@ -385,11 +494,11 @@ header .navbar ul li a:hover {
     margin: 10px;
 }
 
-.project-card:hover{
+.project-card:hover {
     transform: scale(1.2);
 }
 
-#hms{
+#hms {
     height: 155px;
 }
 
@@ -494,14 +603,13 @@ header .navbar ul li a:hover {
     -webkit-transform: scale(0.8);
     /* Browser Variations: */
 
-    /* -moz-transform: scale(0.8);
+/* -moz-transform: scale(0.8);
     -o-transform: scale(0.8);
     -webkit-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s; */
-/* } */ */
-
-#lab_social_icon_footer .social:hover {
+/* } */
+*/ #lab_social_icon_footer .social:hover {
     transform: scale(1.1);
     transition-duration: 0.5s;
 }
@@ -572,6 +680,12 @@ header .navbar ul li a:hover {
         font-size: 50%;
     }
 
+    .experience-card {
+        padding: 25px;
+        font-size: 1rem;
+        max-width: 90%;
+    }
+
 }
 
 @media (max-width:430px) {
@@ -636,11 +750,11 @@ header .navbar ul li a:hover {
     margin-top: 65px !important;
     /* background-image: linear-gradient(to top left, var(--themePrimaryColor), var(--blackColor)); */
     background-color: darkcyan;
-  }
-  
-  
-  
-  .card-body h2 {
+}
+
+
+
+.card-body h2 {
     text-align: center;
     /* background-color: rgba(131, 131, 131, 0.37); */
     line-height: 20px;
@@ -648,10 +762,10 @@ header .navbar ul li a:hover {
     font-weight: bolder;
     color: #ffea04;
     margin-bottom: 20px;
-  }
-  
-  
-  .card img {
+}
+
+
+.card img {
     border-radius: 25px;
     height: 275px;
     width: 100%;
@@ -661,10 +775,10 @@ header .navbar ul li a:hover {
     border-bottom-right-radius: 0px;
     border-top-right-radius: 0px;
     border-top-left-radius: 0px;
-  }
-  
-  
-  .card-text span {
+}
+
+
+.card-text span {
     /* color: var(--whiteColor); */
     color: #eee;
     margin: 23px;
@@ -672,30 +786,30 @@ header .navbar ul li a:hover {
     margin-bottom: 50px;
     font-size: 20px;
     background: none;
-  }
+}
 
-  .btnDiv {
+.btnDiv {
     /* position: absolute; */
     margin-left: 14px;
     margin-top: 30px;
     font-size: 20px;
-    position:absolute;
+    position: absolute;
     /* left: 25px;
     bottom: 25px; */
-  }
+}
 
-  #nitk img{
+#nitk img {
     height: 230px;
-  }
+}
 
-  #nitkbtn{
+#nitkbtn {
     margin-left: 80px;
-  }
+}
 
-  #Dak{
+#Dak {
     margin-left: 8px;
-  }
+}
 
-  #HighSchool{
+#HighSchool {
     margin-left: 50px;
-  }
+}
